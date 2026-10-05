@@ -1,98 +1,392 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta name="viewport" content="width=device-width" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="robots" content="noindex,nofollow" />
-	<title>WordPress &#8250; ReadMe</title>
-	<link rel="stylesheet" href="wp-admin/css/install.css?ver=20100228" />
-</head>
-<body>
-<h1 id="logo">
-	<a href="https://wordpress.org/"><img alt="WordPress" src="wp-admin/images/wordpress-logo.png" /></a>
-</h1>
-<p style="text-align: center">Semantic Personal Publishing Platform</p>
+# PhoneTech Accessories
 
-<h2>First Things First</h2>
-<p>Welcome. WordPress is a very special project to me. Every developer and contributor adds something unique to the mix, and together we create something beautiful that I am proud to be a part of. Thousands of hours have gone into WordPress, and we are dedicated to making it better every day. Thank you for making it part of your world.</p>
-<p style="text-align: right">&#8212; Matt Mullenweg</p>
+## 1. Présentation du projet
 
-<h2>Installation: Famous 5-minute install</h2>
-<ol>
-	<li>Unzip the package in an empty directory and upload everything.</li>
-	<li>Open <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span> in your browser. It will take you through the process to set up a <code>wp-config.php</code> file with your database connection details.
-		<ol>
-			<li>If for some reason this does not work, do not worry. It may not work on all web hosts. Open up <code>wp-config-sample.php</code> with a text editor like WordPad or similar and fill in your database connection details.</li>
-			<li>Save the file as <code>wp-config.php</code> and upload it.</li>
-			<li>Open <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span> in your browser.</li>
-		</ol>
-	</li>
-	<li>Once the configuration file is set up, the installer will set up the tables needed for your site. If there is an error, double check your <code>wp-config.php</code> file, and try again. If it fails again, please go to the <a href="https://wordpress.org/support/forums/">WordPress support forums</a> with as much data as you can gather.</li>
-	<li><strong>If you did not enter a password, note the password given to you.</strong> If you did not provide a username, it will be <code>admin</code>.</li>
-	<li>The installer should then send you to the <a href="wp-login.php">login page</a>. Sign in with the username and password you chose during the installation. If a password was generated for you, you can then click on &#8220;Profile&#8221; to change the password.</li>
-</ol>
+**PhoneTech Accessories** est un site vitrine réalisé avec **WordPress** dans le cadre du module **Développement Full Stack et Microservices**.
 
-<h2>Updating</h2>
-<h3>Using the Automatic Updater</h3>
-<ol>
-	<li>Open <span class="file"><a href="wp-admin/update-core.php">wp-admin/update-core.php</a></span> in your browser and follow the instructions.</li>
-	<li>You wanted more, perhaps? That&#8217;s it!</li>
-</ol>
+L'objectif de ce projet est de découvrir le fonctionnement d'un **CMS monolithique** à travers la création d'un site web destiné à présenter une boutique spécialisée dans les accessoires pour smartphones.
 
-<h3>Updating Manually</h3>
-<ol>
-	<li>Before you update anything, make sure you have backup copies of any files you may have modified such as <code>index.php</code>.</li>
-	<li>Delete your old WordPress files, saving ones you&#8217;ve modified.</li>
-	<li>Upload the new files.</li>
-	<li>Point your browser to <span class="file"><a href="wp-admin/upgrade.php">/wp-admin/upgrade.php</a>.</span></li>
-</ol>
+Le site permet aux visiteurs de découvrir les produits proposés, consulter les articles du blog, obtenir des informations sur l'entreprise et contacter la boutique.
 
-<h2>Migrating from other systems</h2>
-<p>WordPress can <a href="https://developer.wordpress.org/advanced-administration/wordpress/import/">import from a number of systems</a>. First you need to get WordPress installed and working as described above, before using <a href="wp-admin/import.php">our import tools</a>.</p>
+---
 
-<h2>System Requirements</h2>
-<ul>
-	<li><a href="https://www.php.net/">PHP</a> version <strong>7.4</strong> or greater.</li>
-	<li><a href="https://www.mysql.com/">MySQL</a> version <strong>5.5.5</strong> or greater.</li>
-</ul>
+## 2. Technologies utilisées
 
-<h3>Recommendations</h3>
-<ul>
-	<li><a href="https://www.php.net/">PHP</a> version <strong>8.3</strong> or greater.</li>
-	<li><a href="https://www.mysql.com/">MySQL</a> version <strong>8.0</strong> or greater OR <a href="https://mariadb.org/">MariaDB</a> version <strong>10.11</strong> or greater.</li>
-	<li>The <a href="https://httpd.apache.org/docs/2.2/mod/mod_rewrite.html">mod_rewrite</a> Apache module.</li>
-	<li><a href="https://wordpress.org/news/2016/12/moving-toward-ssl/">HTTPS</a> support.</li>
-	<li>A link to <a href="https://wordpress.org/">wordpress.org</a> on your site.</li>
-</ul>
+* **WordPress** : CMS utilisé pour la création du site
+* **PHP** : langage utilisé par WordPress
+* **MySQL** : système de gestion de base de données
+* **HTML / CSS** : structure et présentation des pages
+* **Elementor** : création et personnalisation des pages
+* **WooCommerce** : gestion des produits
+* **Contact Form 7** : création du formulaire de contact
+* **Yoast SEO** : optimisation du référencement
+* **XAMPP** : environnement local avec Apache et MySQL
+* **Git / GitHub** : gestion et partage du projet
 
-<h2>Online Resources</h2>
-<p>If you have any questions that are not addressed in this document, please take advantage of WordPress&#8217; numerous online resources:</p>
-<dl>
-	<dt><a href="https://wordpress.org/documentation/">HelpHub</a></dt>
-		<dd>HelpHub is the encyclopedia of all things WordPress. It is the most comprehensive source of information for WordPress available.</dd>
-	<dt><a href="https://wordpress.org/news/">The WordPress Blog</a></dt>
-		<dd>This is where you&#8217;ll find the latest updates and news related to WordPress. Recent WordPress news appears in your administrative dashboard by default.</dd>
-	<dt><a href="https://planet.wordpress.org/">WordPress Planet</a></dt>
-		<dd>The WordPress Planet is a news aggregator that brings together posts from WordPress blogs around the web.</dd>
-	<dt><a href="https://wordpress.org/support/forums/">WordPress Support Forums</a></dt>
-		<dd>If you&#8217;ve looked everywhere and still cannot find an answer, the support forums are very active and have a large community ready to help. To help them help you be sure to use a descriptive thread title and describe your question in as much detail as possible.</dd>
-	<dt><a href="https://make.wordpress.org/support/handbook/appendix/other-support-locations/introduction-to-irc/">WordPress <abbr>IRC</abbr> (Internet Relay Chat) Channel</a></dt>
-		<dd>There is an online chat channel that is used for discussion among people who use WordPress and occasionally support topics. The above wiki page should point you in the right direction. (<a href="https://web.libera.chat/#wordpress">irc.libera.chat #wordpress</a>)</dd>
-</dl>
+---
 
-<h2>Final Notes</h2>
-<ul>
-	<li>If you have any suggestions, ideas, or comments, or if you (gasp!) found a bug, join us in the <a href="https://wordpress.org/support/forums/">Support Forums</a>.</li>
-	<li>WordPress has a robust plugin <abbr>API</abbr> (Application Programming Interface) that makes extending the code easy. If you are a developer interested in utilizing this, see the <a href="https://developer.wordpress.org/plugins/">Plugin Developer Handbook</a>. You shouldn&#8217;t modify any of the core code.</li>
-</ul>
+# 3. Fonctionnalités du site
 
-<h2>Share the Love</h2>
-<p>WordPress has no multi-million dollar marketing campaign or celebrity sponsors, but we do have something even better&#8212;you. If you enjoy WordPress please consider telling a friend, setting it up for someone less knowledgeable than yourself, or writing the author of a media article that overlooks us.</p>
+Le site **PhoneTech Accessories** contient les pages suivantes :
 
-<p>WordPress is the official continuation of b2/caf&#233;log, which came from Michel V. The work has been continued by the <a href="https://wordpress.org/about/">WordPress developers</a>. If you would like to support WordPress, please consider <a href="https://wordpress.org/donate/">donating</a>.</p>
+### Accueil
 
-<h2>License</h2>
-<p>WordPress is free software, and is released under the terms of the <abbr>GPL</abbr> (GNU General Public License) version 2 or (at your option) any later version. See <a href="license.txt">license.txt</a>.</p>
+La page d'accueil présente :
 
-</body>
-</html>
+* L'entreprise PhoneTech Accessories
+* Une présentation de la boutique
+* Les produits phares
+* Un accès aux différentes sections du site
+
+### Catalogue
+
+La page Catalogue présente plusieurs catégories d'accessoires pour smartphones :
+
+* Coques de protection
+* Chargeurs
+* Câbles
+* Écouteurs
+* Power Banks
+* Supports pour téléphone
+
+Le catalogue contient au minimum 10 produits.
+
+### À propos
+
+Cette page présente :
+
+* L'entreprise
+* Sa mission
+* Ses valeurs
+* Ses objectifs
+* Les raisons de choisir PhoneTech Accessories
+
+### Blog
+
+Le site contient trois articles :
+
+1. **Les tendances des accessoires mobiles**
+2. **Les conseils d'entretien des smartphones**
+3. **Les nouveautés technologiques**
+
+### Contact
+
+La page Contact contient :
+
+* Un formulaire de contact
+* Les coordonnées de l'entreprise
+* Les informations nécessaires pour contacter PhoneTech Accessories
+
+---
+
+# 4. Étapes de réalisation
+
+## Étape 1 : Installation de l'environnement
+
+L'environnement local a été installé avec **XAMPP**.
+
+Les services suivants ont été utilisés :
+
+* Apache
+* MySQL
+
+WordPress a ensuite été installé dans :
+
+```text
+C:\xampp\htdocs\wordpress
+```
+
+Le site est accessible localement avec :
+
+```text
+http://localhost/wordpress/
+```
+
+---
+
+## Étape 2 : Configuration de WordPress
+
+Après l'installation de WordPress :
+
+* Configuration du nom du site
+* Configuration du compte administrateur
+* Configuration des paramètres généraux
+* Choix et personnalisation du thème
+* Installation des extensions nécessaires
+
+---
+
+## Étape 3 : Installation des extensions
+
+Les extensions utilisées pour réaliser le site sont :
+
+* Elementor
+* WooCommerce
+* Contact Form 7
+* Yoast SEO
+
+Ces extensions permettent respectivement de :
+
+* créer et personnaliser les pages ;
+* gérer les produits du catalogue ;
+* créer le formulaire de contact ;
+* améliorer le référencement du site.
+
+---
+
+## Étape 4 : Création des pages
+
+Les cinq pages principales suivantes ont été créées :
+
+```text
+Accueil
+Catalogue
+À propos
+Blog
+Contact
+```
+
+La navigation du site a ensuite été configurée afin de permettre aux visiteurs d'accéder facilement aux différentes pages.
+
+---
+
+## Étape 5 : Création du catalogue
+
+WooCommerce a été utilisé pour créer les produits.
+
+Exemples de produits :
+
+1. Coque de protection transparente
+2. Coque antichoc renforcée
+3. Chargeur rapide USB-C
+4. Câble USB-C
+5. Écouteurs sans fil Bluetooth
+6. Écouteurs filaires
+7. Power Bank 10 000 mAh
+8. Power Bank 20 000 mAh
+9. Support téléphone pour voiture
+10. Support téléphone de bureau
+
+Les produits ont été organisés par catégories.
+
+---
+
+## Étape 6 : Création du blog
+
+Trois articles ont été créés afin de présenter des informations concernant les smartphones et leurs accessoires :
+
+* Les tendances des accessoires mobiles
+* Les conseils d'entretien des smartphones
+* Les nouveautés technologiques
+
+Les articles sont accessibles depuis la page Blog.
+
+---
+
+## Étape 7 : Création du formulaire de contact
+
+Un formulaire de contact a été intégré à la page Contact avec **Contact Form 7**.
+
+Le formulaire permet aux visiteurs de renseigner notamment :
+
+* Nom
+* Adresse e-mail
+* Sujet
+* Message
+
+---
+
+## Étape 8 : Personnalisation avec Elementor
+
+Elementor a été utilisé pour personnaliser les différentes pages du site.
+
+Il a permis de créer :
+
+* Les sections
+* Les colonnes
+* Les titres
+* Les textes
+* Les boutons
+* Les images
+* La présentation des produits
+
+---
+
+# 5. Architecture WordPress
+
+WordPress utilise une architecture **monolithique**.
+
+Dans cette architecture, les différentes fonctionnalités du site sont regroupées dans une même application.
+
+Schéma simplifié :
+
+```text
+                 UTILISATEUR
+                      |
+                      v
+              +---------------+
+              |   WordPress   |
+              |               |
+              | Pages         |
+              | Blog          |
+              | Produits      |
+              | Contact       |
+              | Utilisateurs  |
+              | Extensions    |
+              +---------------+
+                      |
+                      v
+                +-----------+
+                |   MySQL   |
+                | Database  |
+                +-----------+
+```
+
+Les différentes fonctionnalités sont donc intégrées dans la même plateforme WordPress.
+
+### Principaux éléments de l'architecture
+
+**WordPress Core**
+
+Gère le fonctionnement principal du CMS.
+
+**Thème**
+
+Gère l'apparence et la présentation du site.
+
+**Plugins**
+
+Ajoutent des fonctionnalités supplémentaires.
+
+Dans ce projet :
+
+* Elementor → création des pages
+* WooCommerce → gestion des produits
+* Contact Form 7 → formulaire de contact
+* Yoast SEO → référencement
+
+**Base de données MySQL**
+
+Stocke notamment :
+
+* Les pages
+* Les articles
+* Les produits
+* Les utilisateurs
+* Les paramètres
+* Les données des extensions
+
+---
+
+# 6. Architecture monolithique
+
+Dans une architecture monolithique, les différentes fonctionnalités sont regroupées dans une seule application.
+
+Dans notre projet :
+
+```text
+                  WordPress
+                     |
+       +-------------+-------------+
+       |             |             |
+     Pages         Blog        Catalogue
+       |             |             |
+       +-------------+-------------+
+                     |
+                  MySQL
+```
+
+Les différentes fonctionnalités utilisent la même application et la même base de données.
+
+---
+
+# 7. Comparaison : Monolithique vs Microservices
+
+| Architecture monolithique                           | Architecture microservices                       |
+| --------------------------------------------------- | ------------------------------------------------ |
+| Une seule application                               | Plusieurs services indépendants                  |
+| Code regroupé dans un même projet                   | Chaque service possède sa propre responsabilité  |
+| Déploiement global de l'application                 | Déploiement indépendant des services             |
+| Plus simple à mettre en place                       | Plus complexe à mettre en place                  |
+| Maintenance simple pour un petit projet             | Maintenance plus complexe                        |
+| Une modification peut concerner toute l'application | Une modification peut concerner un seul service  |
+| Une base de données généralement centralisée        | Les services peuvent avoir des bases séparées    |
+| Adaptée aux petits et moyens projets                | Adaptée aux applications complexes et évolutives |
+
+### Exemple avec PhoneTech Accessories
+
+Avec une architecture monolithique WordPress, les fonctionnalités sont regroupées dans WordPress :
+
+```text
+WordPress
+│
+├── Gestion des pages
+├── Gestion du blog
+├── Gestion des produits
+├── Gestion des utilisateurs
+├── Gestion du contact
+└── Base de données MySQL
+```
+
+Dans une architecture microservices, le même projet pourrait être divisé en plusieurs services :
+
+```text
+                  API Gateway
+                      |
+       +--------------+--------------+
+       |              |              |
+       v              v              v
+  Service Produits  Service Blog  Service Utilisateurs
+       |              |              |
+       v              v              v
+    Database       Database       Database
+```
+
+Chaque service serait indépendant et communiquerait avec les autres à travers des API.
+
+---
+
+# 8. Avantages de WordPress dans ce projet
+
+WordPress présente plusieurs avantages :
+
+* Installation rapide
+* Interface d'administration simple
+* Nombreuses extensions disponibles
+* Création rapide de pages
+* Gestion simplifiée du contenu
+* Gestion des produits avec WooCommerce
+* Personnalisation avec Elementor
+* Adapté à la réalisation d'un site vitrine
+
+---
+
+# 9. Limites de l'architecture monolithique
+
+L'architecture monolithique présente également certaines limites :
+
+* Le projet peut devenir difficile à maintenir lorsqu'il devient très volumineux.
+* Une modification peut avoir un impact sur plusieurs fonctionnalités.
+* La mise à l'échelle d'une seule fonctionnalité est plus difficile.
+* Les différentes fonctionnalités sont fortement dépendantes les unes des autres.
+
+Les microservices permettent de résoudre certaines de ces limitations en séparant l'application en plusieurs services indépendants.
+
+---
+
+# 10. Conclusion
+
+La réalisation de **PhoneTech Accessories** a permis de découvrir le fonctionnement d'un CMS monolithique à travers WordPress.
+
+Le projet a permis de mettre en pratique :
+
+* La création d'un site avec WordPress
+* La création et la personnalisation de pages avec Elementor
+* La gestion de produits avec WooCommerce
+* La création d'articles de blog
+* La création d'un formulaire de contact
+* La gestion d'une base de données MySQL
+* L'utilisation de plugins WordPress
+* La gestion d'un projet avec Git et GitHub
+
+Ce projet permet également de comprendre la différence entre une **architecture monolithique**, utilisée par WordPress, et une **architecture microservices**, dans laquelle les fonctionnalités sont séparées en plusieurs services indépendants.
