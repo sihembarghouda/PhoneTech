@@ -1,0 +1,38 @@
+li#accordion-section-phone_accessories_store_go_pro,
+li#accordion-section-phone_accessories_store_doc  {
+    display: block !important;
+}
+#accordion-section-phone_accessories_store_go_pro h3.accordion-section-title,
+#accordion-section-phone_accessories_store_doc h3.accordion-section-title{
+    background: #ED5506 !important;
+    color: #fff !important;
+    font-size: 13px;
+    padding: 15px 15px 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#accordion-section-phone_accessories_store_go_pro h3.accordion-section-title a:focus,
+#accordion-section-phone_accessories_store_doc h3.accordion-section-title a:focus {
+  box-shadow: unset !important;
+}
+a.button.button-secondary.alignright {
+    color: #ED5506!important;
+    background: #FFF !important;
+    font-size: 14px;
+    margin: -5px !important;
+    border-radius: 0 !important;
+    border: none !important;
+    font-size: 14px;
+}
+#accordion-section-phone_accessories_store_go_pro .accordion-section-title:after,
+#accordion-section-phone_accessories_store_doc .accordion-section-title:after{
+  display: none;
+}
+.customize-pane-parent{
+  overflow-x: hidden !important;
+}
+.accordion-section-title button.accordion-trigger{
+  height: auto !important;
+}
+

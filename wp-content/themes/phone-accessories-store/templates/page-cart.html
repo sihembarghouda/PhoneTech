@@ -1,0 +1,32 @@
+<!-- wp:template-part {"slug":"header","theme":"phone-accessories-store","tagName":"header"} /-->
+<!-- wp:pattern {"slug":"phone-accessories-store/cover-with-post-title"} /-->
+
+<!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
+
+	<!-- wp:spacer {"height":"40px"} -->
+	<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+
+	<!-- wp:woocommerce/cart {"align":"wide"} -->
+	<div class="wp-block-woocommerce-cart alignwide is-loading">
+		
+		<!-- wp:woocommerce/cart-items-block -->
+		<div class="wp-block-woocommerce-cart-items-block"></div>
+		<!-- /wp:woocommerce/cart-items-block -->
+
+		<!-- wp:woocommerce/cart-totals-block -->
+		<div class="wp-block-woocommerce-cart-totals-block"></div>
+		<!-- /wp:woocommerce/cart-totals-block -->
+
+	</div>
+	<!-- /wp:woocommerce/cart -->
+
+	<!-- wp:spacer {"height":"40px"} -->
+	<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"phone-accessories-store","tagName":"footer"} /-->

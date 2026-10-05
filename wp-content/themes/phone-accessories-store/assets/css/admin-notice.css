@@ -1,0 +1,81 @@
+/*Notice function*/
+.ocdi h2 {
+  text-align: inherit;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 0px !important;
+}
+.phone-accessories-store-notice-title{
+  font-size: 20px;
+}
+.notice {
+  position: relative;
+  padding: 12px 14px;
+}
+.notice p.dismiss-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 0;
+  padding: 0;
+}
+a.current.menu-top.menu-icon-generic.toplevel_page_massagewellnessretreat-demoimport.menu-top-last {
+  background: #2271b1;
+  color: #fff;
+}
+.getting-started-top-wrap .theme-details .about-text {
+  font-size: 15px;
+  font-weight: 600;
+}
+.phone-accessories-store-welcome-notice {
+  padding: 20px;
+  display: block;
+}
+.phone-accessories-store-welcome-notice-wrap h2,.phone-accessories-store-welcome-notice-wrap h3 {
+  margin: 0;
+}
+.phone-accessories-store-welcome-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+.phone-accessories-store-welcome-thumb img {
+  max-width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.phone-accessories-store-welcome-import,.phone-accessories-store-welcome-getting-started{
+  max-width: 400px;
+}
+.phone-accessories-store-welcome-import p,.phone-accessories-store-welcome-getting-started p{
+  font-size: 14px;
+}
+.phone-accessories-store-dismiss-link {
+  float: right;
+  margin: 0;
+}
+.phone-accessories-store-notice-desc{
+  font-size: 16px;
+}
+a.info-link {
+  padding: 6px 15px !important;
+  font-size: 15px !important;
+}
+@media only screen and (max-width: 767px) {
+  .phone-accessories-store-welcome-info {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .notice {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .abt-theme-wrap .buttons a {
+    margin-bottom: 5px;
+  }
+}
